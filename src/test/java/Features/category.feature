@@ -1,6 +1,6 @@
 Feature: Categorisation of Rs Components web site.
 
-  Scenario: 1. Verify Batteries category.
+  Scenario: 1.Verify Batteries category
     Given user is logged in with valid credentials
     And user navigates to the home page
     When user clicks on Batteries tab
@@ -8,14 +8,14 @@ Feature: Categorisation of Rs Components web site.
     And user is presented with batteries category products
 
 
-  Scenario: 2. Select a battery product.
+  Scenario: 2.Select a battery product
     Given user is presented with batteries category products
     When user click on Battery Holders and Mounts tab
     Then user is taken to Battery Holders and Mounts page
     And user can select desired product
 
 
-  Scenario: 3. Verify Cabled and Wires category.
+  Scenario: 3.Verify Cabled and Wires category
     Given user is logged in with valid credentials
     And user navigates to the home page
     When user clicks on Cabled and Wires tab
@@ -23,7 +23,7 @@ Feature: Categorisation of Rs Components web site.
     And user can select any Cable Conduits product
 
 
-  Scenario Outline: 4. Apply filter to cable and wires products.
+  Scenario Outline: 4.Apply filter to cable and wires products.
     Given user is taken to the  Cabled and Wires category page
     When user selects cable and wires category as "<popular categories>"
     Then user is navigated to the product category section
@@ -35,7 +35,8 @@ Feature: Categorisation of Rs Components web site.
       | cable trunking     | 45             |
       | cable sleeves      | 1              |
 
-  Scenario Outline: 5. Add Torches products to cart.
+
+  Scenario Outline: 5.Add Torches products to cart.
     Given user is logged in with valid credentials
     And user navigates to the home page
     And user clicks on Torches tab
